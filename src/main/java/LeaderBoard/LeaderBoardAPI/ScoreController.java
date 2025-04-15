@@ -5,16 +5,17 @@ import java.util.Collections;
 import java.util.Comparator;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import LeaderBoard.LeaderBoardAPI.Models.Score;
-import LeaderBoard.LeaderBoardAPI.Models.User;
 import LeaderBoard.LeaderBoardAPI.Repos.ScoreRepository;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/score")
 public class ScoreController {
     @Autowired
