@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 public class AchievmentProgressConsumer {
 
   @KafkaListener(topics = "achievments")
-  public void consume() {
-    
+  public void consumer() {
+
   }
 
 }
