@@ -1,12 +1,12 @@
 version: '3.1'
 
 services:
-  writer-webapp:
-   build:
-     context: .
-     dockerfile: Dockerfile
-   ports:
-     - "8080:8080"
+  #writer-webapp:
+   #build:
+     #context: .
+    # dockerfile: Dockerfile
+   #ports:
+     #- "8080:8080"
   db:
     image: mysql:8.0.19
     command: --default-authentication-plugin=mysql_native_password
